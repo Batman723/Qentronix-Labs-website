@@ -3,63 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Qentronix Labs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav>
             <div class="logo">
                 <h1>Qentronix Labs</h1>
             </div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <section id="home" class="hero">
-            <h2>Welcome to Qentronix Labs</h2>
-            <p>Innovating the Future with Quantum Computing</p>
-            <a href="#services" class="cta-btn">Explore Our Services</a>
-        </section>
     </header>
-
+    <section id="home" class="home-section">
+        <div class="hero-text">
+            <h2>Welcome to the Future of Quantum Computing</h2>
+            <p>Revolutionizing the tech world with next-gen AI and quantum technology.</p>
+        </div>
+    </section>
     <section id="about" class="about-section">
         <h2>About Us</h2>
-        <p>Qentronix Labs is at the forefront of quantum computing, driving innovation and solving tomorrow's problems today. Our mission is to make quantum computing accessible to everyone.</p>
+        <p>At Qentronix Labs, we are pioneers in quantum computing, blending cutting-edge technology with futuristic AI.</p>
     </section>
-
-    <section id="services" class="services-section">
-        <h2>Our Services</h2>
-        <div class="service-card">
-            <h3>Quantum Computing Solutions</h3>
-            <p>We offer cutting-edge quantum computing solutions to help businesses solve complex problems.</p>
-        </div>
-        <div class="service-card">
-            <h3>AI Integration</h3>
-            <p>We integrate AI into quantum systems, unlocking new potential for your business.</p>
-        </div>
-        <div class="service-card">
-            <h3>Consulting & Research</h3>
-            <p>Our experts provide consulting services and research to guide you through the quantum era.</p>
-        </div>
-    </section>
-
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <form action="#" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="cta-btn">Send Message</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
-
     <footer>
         <p>&copy; 2025 Qentronix Labs. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
