@@ -22,24 +22,16 @@
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="hero-text">
-            <h2>Welcome to Qentronix Labs</h2>
-            <p>Pioneering the future of quantum computing and AI technology.</p>
+            <h1>Welcome to Qentronix Labs</h1>
+            <p>Revolutionizing Quantum Computing & AI</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
-    </section>
-
-    <!-- Quantum Flip Coin Section (Placed Correctly) -->
-    <section id="quantum-flip" class="quantum-flip-section">
-        <h2>Quantum Flip Coin</h2>
-        <p>Click the button to flip a quantum coin!</p>
-        <button id="flip-coin">Flip Coin</button>
-        <p id="flip-result"></p>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>We are revolutionizing quantum computing with cutting-edge AI integration.</p>
+        <p>Qentronix Labs is at the forefront of next-gen technology, blending AI and quantum computing to solve real-world problems.</p>
     </section>
 
     <!-- Contact Section -->
@@ -52,18 +44,6 @@
             <button type="submit">Send</button>
         </form>
     </section>
-
-    <!-- JavaScript for Quantum Flip -->
-    <script>
-        document.getElementById("flip-coin").addEventListener("click", function() {
-            fetch('/flip')  // Sending request to Flask API (app.py)
-                .then(response => response.json())  // Convert response to JSON
-                .then(data => {
-                    document.getElementById("flip-result").innerText = "Result: " + data.result;
-                })
-                .catch(error => console.error('Error:', error));
-        });
-    </script>
 
 </body>
 </html>
